@@ -3,277 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evidence-based research on low-sugar diets, weight loss, and metabolic health.">
+    <meta name="description" content="Evidence-based research on low-sugar diets, weight loss, and metabolic health. Learn the science behind ZeroSugar Club's approach with studies from Stanford, AHA, and leading researchers.">
+    <meta name="keywords" content="sugar research, weight loss studies, metabolic health, Stanford diet study, low sugar benefits, evidence-based nutrition">
     <title>The Science Behind Low-Sugar Living | ZeroSugar Club Blog</title>
-    
-    <style>
-        /* Same base styles as index.html */
-        :root {
-            --primary-color: #7C3AED;
-            --primary-dark: #5B21B6;
-            --secondary-color: #F59E0B;
-            --success-color: #10B981;
-            --danger-color: #EF4444;
-            --text-dark: #1F2937;
-            --text-light: #6B7280;
-            --bg-light: #F9FAFB;
-            --bg-white: #FFFFFF;
-            --border-color: #E5E7EB;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: var(--bg-light);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        /* Navigation - Same as index */
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 1rem 0;
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .logo-icon {
-            font-size: 2rem;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-        }
-
-        .cta-button {
-            background: var(--primary-color);
-            color: white !important;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-        }
-
-        /* Blog Layout */
-        .blog-post {
-            padding: 4rem 0;
-        }
-
-        .blog-layout {
-            display: grid;
-            grid-template-columns: 1fr 350px;
-            gap: 4rem;
-            align-items: start;
-        }
-
-        .blog-main {
-            background: white;
-            padding: 3rem;
-            border-radius: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .blog-header h1 {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
-
-        .blog-meta {
-            display: flex;
-            gap: 1.5rem;
-            color: var(--text-light);
-            font-size: 0.875rem;
-            margin-bottom: 2rem;
-        }
-
-        .blog-content h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .blog-content h3 {
-            font-size: 1.75rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .blog-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .blog-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-        }
-
-        .blog-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight {
-            color: var(--primary-color);
-        }
-
-        /* Sidebar */
-        .blog-sidebar {
-            position: sticky;
-            top: 100px;
-        }
-
-        .sidebar-widget {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar-widget h4 {
-            margin-bottom: 1rem;
-        }
-
-        .sidebar-widget ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar-widget li {
-            margin-bottom: 0.75rem;
-        }
-
-        .sidebar-widget a {
-            color: var(--text-dark);
-            text-decoration: none;
-        }
-
-        .sidebar-widget a:hover {
-            color: var(--primary-color);
-        }
-
-        .cta-widget {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-            color: white;
-        }
-
-        .cta-widget h4 {
-            color: white;
-        }
-
-        .cta-widget p {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: white;
-            color: var(--primary-color);
-            text-decoration: none;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
-
-        /* Callout Boxes */
-        .callout-box {
-            padding: 1.5rem;
-            border-radius: 1rem;
-            margin: 2rem 0;
-            border-left: 4px solid var(--primary-color);
-            background: var(--bg-light);
-        }
-
-        .callout-box h4 {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            padding: 3rem 0 1rem;
-            margin-top: 4rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .blog-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .blog-sidebar {
-                position: static;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .blog-main {
-                padding: 2rem;
-            }
-
-            .blog-header h1 {
-                font-size: 1.75rem;
-            }
-        }
-    </style>
+    <link rel="canonical" href="https://yourusername.github.io/zerosugar-club/blog.html">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
@@ -295,115 +29,270 @@
 
     <article class="blog-post">
         <div class="container">
-            <div class="blog-layout">
-                <div class="blog-main">
-                    <header class="blog-header">
-                        <h1>The Science Behind Low-Sugar Living: Evidence-Based Research for Weight Loss and Metabolic Health</h1>
-                        <div class="blog-meta">
-                            <time>November 1, 2025</time>
-                            <span>8 min read</span>
-                            <span>By ZeroSugar Research Team</span>
-                        </div>
-                    </header>
+            <header class="blog-header">
+                <h1>The Science Behind Low-Sugar Living: Evidence-Based Research for Weight Loss and Metabolic Health</h1>
+                <div class="blog-meta">
+                    <time datetime="2025-11-01">November 1, 2025</time>
+                    <span class="reading-time">8 min read</span>
+                    <span class="author">By ZeroSugar Research Team</span>
+                </div>
+            </header>
 
-                    <div class="blog-content">
-                        <h2>The Evidence-Based Approach to Sugar Reduction</h2>
-                        
-                        <p style="font-size: 1.25rem; padding: 1.5rem; background: var(--bg-light); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">Reducing added sugar intake supports weight loss and improves metabolic health—but is a strict "no sugar" approach really necessary? We analyzed the latest research from Stanford Medicine, the American Heart Association, and peer-reviewed studies to give you the facts.</p>
+            <div class="blog-content">
+                <h2>The Evidence-Based Approach to Sugar Reduction</h2>
+                
+                <p class="lead">Reducing added sugar intake supports weight loss and improves metabolic health—but is a strict "no sugar" approach really necessary? We analyzed the latest research from Stanford Medicine, the American Heart Association, and peer-reviewed studies to give you the facts.</p>
 
-                        <h3>What the Research Actually Shows</h3>
-                        
-                        <p>A low-sugar dietary approach that limits added sugars to under 10% of daily calories can effectively support weight loss and improve metabolic health markers. However, balanced approaches like the Mediterranean diet—which naturally limits added sugars while including whole grains, fruits, and legumes—demonstrate superior long-term adherence and cardiovascular benefits compared to highly restrictive low-carb or no-sugar diets.</p>
+                <h3>What the Research Actually Shows</h3>
+                
+                <p>A low-sugar dietary approach that limits added sugars to under 10% of daily calories can effectively support weight loss and improve metabolic health markers. However, balanced approaches like the Mediterranean diet—which naturally limits added sugars while including whole grains, fruits, and legumes—demonstrate superior long-term adherence and cardiovascular benefits compared to highly restrictive low-carb or no-sugar diets.</p>
 
-                        <div class="callout-box">
-                            <h4>🔬 Key Finding</h4>
-                            <p>Stanford Medicine research found that both keto and Mediterranean diets achieved similar weight loss (7-8%), but the Mediterranean approach showed better long-term results and heart health benefits.</p>
-                        </div>
+                <div class="callout-box">
+                    <h4>🔬 Key Finding</h4>
+                    <p>Stanford Medicine research found that both keto and Mediterranean diets achieved similar weight loss (7-8%), but the Mediterranean approach showed better long-term results and heart health benefits.</p>
+                </div>
 
-                        <h3>1. Sugar Reduction Leads to Measurable Weight Loss</h3>
-                        
-                        <p>The PREMIER trial, a large-scale study published in the American Journal of Clinical Nutrition, tracked 810 adults for 18 months. Researchers found that reducing sugar-sweetened beverage intake by just <strong>one serving per day</strong> was associated with:</p>
-                        
+                <h3>1. Sugar Reduction Leads to Measurable Weight Loss</h3>
+                
+                <p>The PREMIER trial, a large-scale study published in the <em>American Journal of Clinical Nutrition</em>, tracked 810 adults for 18 months. Researchers found that reducing sugar-sweetened beverage intake by just <strong>one serving per day</strong> was associated with:</p>
+                
+                <ul class="research-list">
+                    <li><strong>0.49 kg weight loss at 6 months</strong></li>
+                    <li><strong>0.65 kg weight loss at 18 months</strong></li>
+                    <li>Stronger effect than reducing solid calorie intake</li>
+                </ul>
+                
+                <p>This demonstrates that liquid sugar sources (sodas, sweetened coffee, juice) have a particularly strong impact on weight gain.</p>
+                
+                <p class="citation"><strong>Source:</strong> Chen L, et al. (2009). Reduction in consumption of sugar-sweetened beverages is associated with weight loss: the PREMIER trial. <em>American Journal of Clinical Nutrition</em>. <a href="https://www.sciencedirect.com/science/article/pii/S0002916523237879" target="_blank" rel="noopener noreferrer">Read study →</a></p>
+
+                <h3>2. Official Guidelines: How Much Sugar Is Too Much?</h3>
+                
+                <p>The 2020-2025 Dietary Guidelines for Americans recommend limiting added sugars to <strong>no more than 10% of total daily calories</strong>. For a 2,000 calorie diet, that's about 50 grams (12 teaspoons) per day.</p>
+                
+                <p>However, the American Heart Association sets even stricter guidelines:</p>
+                
+                <ul class="research-list">
+                    <li><strong>Men:</strong> No more than 36g (9 teaspoons) daily</li>
+                    <li><strong>Women:</strong> No more than 25g (6 teaspoons) daily</li>
+                </ul>
+                
+                <p>Most Americans consume about 17 teaspoons of added sugar daily—nearly double the recommended amount.</p>
+                
+                <div class="callout-box warning">
+                    <h4>⚠️ Important Distinction</h4>
+                    <p>These guidelines refer to <strong>added sugars</strong> only—not natural sugars found in fruits, vegetables, and dairy products, which come with fiber, vitamins, and other beneficial nutrients.</p>
+                </div>
+                
+                <p class="citation"><strong>Sources:</strong> U.S. Department of Agriculture. (2020). <em>Dietary Guidelines for Americans 2020-2025</em>. <a href="https://www.dietaryguidelines.gov" target="_blank" rel="noopener noreferrer">View guidelines →</a> | American Heart Association. <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much" target="_blank" rel="noopener noreferrer">Read more →</a></p>
+
+                <h3>3. Mediterranean Diet Outperforms Keto Long-Term</h3>
+                
+                <p>A groundbreaking 2022 study from Stanford Medicine compared the ketogenic diet to the Mediterranean diet in people with prediabetes or type 2 diabetes. Both groups followed each diet for 12 weeks in random order.</p>
+                
+                <p><strong>Results:</strong></p>
+                
+                <table class="comparison-table-blog">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Keto Diet</th>
+                            <th>Mediterranean Diet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Weight Loss</td>
+                            <td>8%</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>HbA1c Reduction</td>
+                            <td>9%</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>LDL Cholesterol</td>
+                            <td class="negative">+10% (increased)</td>
+                            <td class="positive">-5% (decreased)</td>
+                        </tr>
+                        <tr>
+                            <td>Long-term Adherence</td>
+                            <td class="negative">Low</td>
+                            <td class="positive">High</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>Dr. Christopher Gardner, lead researcher, noted: <em>"Most people quit following the keto diet almost immediately when the study ended, while many on the Mediterranean diet were still eating that way months later."</em></p>
+                
+                <p>The Mediterranean diet naturally limits added sugars while including nutrient-dense whole grains, fruits, and legumes—making it more sustainable and heart-healthy than extremely restrictive approaches.</p>
+                <p class="citation"><strong>Source:</strong> Gardner CD, et al. (2022). Effect of a ketogenic diet versus Mediterranean diet on glycated hemoglobin in individuals with prediabetes and type 2 diabetes mellitus. <em>American Journal of Clinical Nutrition</em>. <a href="https://med.stanford.edu/news/all-news/2022/070/keto-mediterranean-diet-diabetes.html" target="_blank" rel="noopener noreferrer">Read Stanford study →</a></p>
+
+                <h3>4. Metabolic Health Benefits of Cutting Added Sugar</h3>
+                
+                <p>Beyond weight loss, reducing added sugar intake provides multiple metabolic health benefits supported by research:</p>
+                
+                <h4>Blood Sugar Control & Diabetes Prevention</h4>
+                <p>Studies show that cutting added sugars and processed foods helps minimize blood sugar spikes and aids in the prevention of insulin resistance. This is particularly important for individuals with prediabetes or those at risk of developing type 2 diabetes.</p>
+                
+                <h4>Reduced Inflammation</h4>
+                <p>A 2022 paper examining excess dietary sugar consumption found links to chronic inflammation, including the development of tumors. Reducing sugar intake can help lower systemic inflammation markers.</p>
+                
+                <h4>Cardiovascular Protection</h4>
+                <p>Excessive sugar consumption has been linked to increased triglyceride levels and higher risk of heart disease. By eliminating sugar-laden processed foods, individuals can reduce cardiovascular risk factors and promote better heart health.</p>
+                
+                <h4>Mental Health Benefits</h4>
+                <p>A 2024 cross-sectional study linked high sugar diets with depression. Reducing sugar intake may help prevent mood shifts and support better mental health outcomes.</p>
+                
+                <p class="citation"><strong>Sources:</strong> Thrive Nutrition. (2024). The Best No-Sugar Diet Meal Plan for 2024. <a href="https://www.thrivenutritionmn.com/target-inflammation-naturally/the-best-no-sugar-diet-meal-plan-for-2024" target="_blank" rel="noopener noreferrer">Read more →</a> | Gillespie KM, et al. (2023). The impact of free sugar on human health. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9966020/" target="_blank" rel="noopener noreferrer">View research →</a></p>
+
+                <h3>5. What About "No Sugar" vs. "Low Sugar"?</h3>
+                
+                <p>Here's where nuance matters. Research consistently supports reducing <strong>added sugars</strong>, but there's little evidence that eliminating <strong>all sugars</strong>—including natural sugars from whole fruits—provides additional benefits.</p>
+                
+                <div class="two-column-comparison">
+                    <div class="column">
+                        <h4 class="positive-heading">✓ Supported by Research</h4>
                         <ul>
-                            <li><strong>0.49 kg weight loss at 6 months</strong></li>
-                            <li><strong>0.65 kg weight loss at 18 months</strong></li>
-                            <li>Stronger effect than reducing solid calorie intake</li>
+                            <li>Limiting added sugars to 25-36g daily</li>
+                            <li>Eliminating sugar-sweetened beverages</li>
+                            <li>Avoiding processed foods with added sugar</li>
+                            <li>Eating whole fruits in moderation</li>
+                            <li>Including whole grains and legumes</li>
                         </ul>
-                        
-                        <p>This demonstrates that liquid sugar sources (sodas, sweetened coffee, juice) have a particularly strong impact on weight gain.</p>
-
-                        <h3>2. Official Guidelines: How Much Sugar Is Too Much?</h3>
-                        
-                        <p>The 2020-2025 Dietary Guidelines for Americans recommend limiting added sugars to <strong>no more than 10% of total daily calories</strong>. For a 2,000 calorie diet, that's about 50 grams (12 teaspoons) per day.</p>
-                        
-                        <p>However, the American Heart Association sets even stricter guidelines:</p>
-                        
+                    </div>
+                    <div class="column">
+                        <h4 class="negative-heading">✗ Not Necessary</h4>
                         <ul>
-                            <li><strong>Men:</strong> No more than 36g (9 teaspoons) daily</li>
-                            <li><strong>Women:</strong> No more than 25g (6 teaspoons) daily</li>
+                            <li>Eliminating all fruits</li>
+                            <li>Cutting out all carbohydrates</li>
+                            <li>Avoiding dairy with natural lactose</li>
+                            <li>Extreme restriction without flexibility</li>
+                            <li>Unsustainable long-term approaches</li>
                         </ul>
-                        
-                        <p>Most Americans consume about 17 teaspoons of added sugar daily—nearly double the recommended amount.</p>
+                    </div>
+                </div>
 
-                        <h3>3. Mediterranean Diet Outperforms Keto Long-Term</h3>
-                        
-                        <p>A groundbreaking 2022 study from Stanford Medicine compared the ketogenic diet to the Mediterranean diet in people with prediabetes or type 2 diabetes. Both groups followed each diet for 12 weeks in random order.</p>
-                        
-                        <p><strong>Results:</strong></p>
+                <h3>6. The ZeroSugar Club Approach: Evidence Meets Practicality</h3>
+                
+                <p>Based on this research, our program follows a <strong>low added-sugar</strong> approach inspired by Mediterranean-style eating:</p>
+                
+                <ul class="feature-list">
+                    <li><strong>✓ Eliminates added sugars</strong> from processed foods, sodas, and sweets</li>
+                    <li><strong>✓ Includes whole fruits</strong> for fiber, vitamins, and antioxidants</li>
+                    <li><strong>✓ Emphasizes whole grains</strong> and legumes for sustained energy</li>
+                    <li><strong>✓ Focuses on nutrient-dense foods</strong> like vegetables, lean proteins, and healthy fats</li>
+                    <li><strong>✓ Provides realistic, sustainable guidelines</strong> you can follow long-term</li>
+                </ul>
+                
+                <p>This approach aligns with both American Heart Association recommendations and Stanford research showing that balanced, less restrictive diets produce better long-term results.</p>
+
+                <h3>7. What Results Can You Expect?</h3>
+                
+                <p>Based on the research we've reviewed, here's what's realistic when following a low added-sugar approach:</p>
+                
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h4>Week 1</h4>
                         <ul>
-                            <li>Weight Loss: 8% (keto) vs 7% (Mediterranean)</li>
-                            <li>HbA1c Reduction: 9% (keto) vs 7% (Mediterranean)</li>
-                            <li>LDL Cholesterol: +10% increased (keto) vs -5% decreased (Mediterranean)</li>
-                            <li>Long-term Adherence: Low (keto) vs High (Mediterranean)</li>
+                            <li>Reduced sugar cravings</li>
+                            <li>More stable energy levels</li>
+                            <li>Better sleep quality</li>
+                            <li>Initial water weight loss</li>
                         </ul>
-                        
-                        <p>Dr. Christopher Gardner, lead researcher, noted: <em>"Most people quit following the keto diet almost immediately when the study ended, while many on the Mediterranean diet were still eating that way months later."</em></p>
-
-                        <h3>The Bottom Line: Science-Backed Recommendations</h3>
-                        
-                        <div class="callout-box" style="border-left-color: var(--success-color); background: #D1FAE5;">
-                            <h4>🎯 What Works (Supported by Research)</h4>
-                            <ol style="padding-left: 1.5rem;">
-                                <li><strong>Limit added sugars</strong> to 25-36g daily (AHA guidelines)</li>
-                                <li><strong>Eliminate sugar-sweetened beverages</strong> (strongest weight loss correlation)</li>
-                                <li><strong>Follow Mediterranean-style eating</strong> (best long-term adherence & heart health)</li>
-                                <li><strong>Include whole fruits, grains, and legumes</strong> (no evidence they harm weight loss)</li>
-                                <li><strong>Focus on whole, unprocessed foods</strong> (naturally low in added sugar)</li>
-                                <li><strong>Combine with regular exercise</strong> (synergistic effects on metabolic health)</li>
-                            </ol>
-                        </div>
-
-                        <h3>Ready to Start Your Low-Sugar Journey?</h3>
-                        
-                        <p>The ZeroSugar Club app provides 30 days of science-backed meal plans and workouts designed around these evidence-based principles. Try the first 3 days completely free, then unlock all 30 days for just $6.99—no subscription required.</p>
-                        
-                        <div style="background: linear-gradient(135deg, var(--primary-
-<hr style="border: none; border-top: 2px solid var(--border-color); margin: 3rem 0;">
-
-                    <h3>References & Further Reading</h3>
-                    
-                    <div style="background: var(--bg-light); padding: 2rem; border-radius: 1rem; font-size: 0.875rem;">
-                        <ol style="padding-left: 1.5rem;">
-                            <li style="margin-bottom: 1rem;">Chen L, et al. (2009). Reduction in consumption of sugar-sweetened beverages is associated with weight loss: the PREMIER trial. <em>American Journal of Clinical Nutrition</em>, 89(5), 1299-1306.</li>
-                            
-                            <li style="margin-bottom: 1rem;">Gardner CD, et al. (2022). Effect of a ketogenic diet versus Mediterranean diet on glycated hemoglobin in individuals with prediabetes and type 2 diabetes mellitus. <em>American Journal of Clinical Nutrition</em>, 116(3), 640-652.</li>
-                            
-                            <li style="margin-bottom: 1rem;">U.S. Department of Agriculture. (2020). <em>Dietary Guidelines for Americans, 2020-2025</em>. 9th Edition.</li>
-                            
-                            <li style="margin-bottom: 1rem;">American Heart Association. (2024). How much sugar is too much?</li>
-                            
-                            <li style="margin-bottom: 1rem;">Gillespie KM, et al. (2023). The impact of free sugar on human health—A narrative review. <em>Nutrients</em>, 15(4), 889.</li>
-                        </ol>
                     </div>
+                    <div class="result-card">
+                        <h4>Week 2-3</h4>
+                        <ul>
+                            <li>Clearer skin</li>
+                            <li>Improved digestion</li>
+                            <li>Consistent energy</li>
+                            <li>3-5 lbs weight loss</li>
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h4>Week 4+</h4>
+                        <ul>
+                            <li>Improved blood sugar control</li>
+                            <li>Reduced inflammation</li>
+                            <li>Better mood & focus</li>
+                            <li>5-10 lbs total weight loss</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p><em>Note: Individual results vary based on starting weight, activity level, and adherence to the program.</em></p>
 
-                    <div style="background: var(--bg-light); padding: 2rem; border-radius: 1rem; margin: 2rem 0;">
-                        <h4 style="margin-bottom: 1rem;">About the Research Team</h4>
-                        <p style="margin-bottom: 0;">The ZeroSugar Club Research Team consists of registered dietitians, certified nutritionists, and health science researchers dedicated to providing evidence-based nutritional guidance.</p>
-                    </div>
-                    
-                    <div style="background: #FEF3C7; border-left: 4px solid var(--secondary-color); padding: 1.5rem; border-radius: 0.5rem;">
-                        <p style="margin-bottom: 0; font-size: 0.875rem;"><strong>Medical Disclaimer:</strong> This content is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or qualified health provider with any questions you may have regarding a medical condition or dietary changes.</p>
-                    </div>
+                <h3>8. Common Myths About Sugar and Weight Loss</h3>
+                
+                <h4>Myth #1: "All sugar is equally bad"</h4>
+                <p><strong>Reality:</strong> Natural sugars from whole fruits come packaged with fiber, which slows absorption and provides essential nutrients. Added sugars in processed foods lack these benefits.</p>
+                
+                <h4>Myth #2: "You must eliminate all carbs to lose weight"</h4>
+                <p><strong>Reality:</strong> Stanford research shows Mediterranean-style eating (which includes whole grains) achieves similar weight loss to keto with better long-term sustainability and heart health.</p>
+                
+                <h4>Myth #3: "Low-fat is better than low-sugar"</h4>
+                <p><strong>Reality:</strong> Studies consistently show that reducing liquid sugar calories has a stronger effect on weight loss than reducing solid calories, including healthy fats.</p>
+                
+                <h4>Myth #4: "One serving of sugar won't make a difference"</h4>
+                <p><strong>Reality:</strong> The PREMIER trial showed that reducing just one serving of sugar-sweetened beverages daily led to nearly 1.5 lbs of weight loss over 18 months—small changes compound.</p>
+
+                <h3>The Bottom Line: Science-Backed Recommendations</h3>
+                
+                <div class="callout-box success">
+                    <h4>🎯 What Works (Supported by Research)</h4>
+                    <ol>
+                        <li><strong>Limit added sugars</strong> to 25-36g daily (AHA guidelines)</li>
+                        <li><strong>Eliminate sugar-sweetened beverages</strong> (strongest weight loss correlation)</li>
+                        <li><strong>Follow Mediterranean-style eating</strong> (best long-term adherence & heart health)</li>
+                        <li><strong>Include whole fruits, grains, and legumes</strong> (no evidence they harm weight loss)</li>
+                        <li><strong>Focus on whole, unprocessed foods</strong> (naturally low in added sugar)</li>
+                        <li><strong>Combine with regular exercise</strong> (synergistic effects on metabolic health)</li>
+                    </ol>
+                </div>
+
+                <h3>Ready to Start Your Low-Sugar Journey?</h3>
+                
+                <p>The ZeroSugar Club app provides 30 days of science-backed meal plans and workouts designed around these evidence-based principles. Try the first 3 days completely free, then unlock all 30 days for just $6.99—no subscription required.</p>
+                
+                <div class="blog-cta">
+                    <h4>Start Your Free 3-Day Trial</h4>
+                    <p>Experience the benefits of low-sugar living with expert guidance</p>
+                    <a href="index.html#download" class="btn btn-primary">Download the App</a>
+                </div>
+
+                <hr>
+
+                <h3>References & Further Reading</h3>
+                
+                <div class="references">
+                    <ol>
+                        <li>Chen L, et al. (2009). Reduction in consumption of sugar-sweetened beverages is associated with weight loss: the PREMIER trial. <em>American Journal of Clinical Nutrition</em>, 89(5), 1299-1306. <a href="https://www.sciencedirect.com/science/article/pii/S0002916523237879" target="_blank" rel="noopener noreferrer">https://doi.org/10.3945/ajcn.2008.27240</a></li>
+                        
+                        <li>Gardner CD, et al. (2022). Effect of a ketogenic diet versus Mediterranean diet on glycated hemoglobin in individuals with prediabetes and type 2 diabetes mellitus: The interventional Keto-Med randomized crossover trial. <em>American Journal of Clinical Nutrition</em>, 116(3), 640-652. <a href="https://med.stanford.edu/news/all-news/2022/070/keto-mediterranean-diet-diabetes.html" target="_blank" rel="noopener noreferrer">Stanford Medicine News</a></li>
+                        
+                        <li>U.S. Department of Agriculture and U.S. Department of Health and Human Services. (2020). <em>Dietary Guidelines for Americans, 2020-2025</em>. 9th Edition. <a href="https://www.dietaryguidelines.gov" target="_blank" rel="noopener noreferrer">www.dietaryguidelines.gov</a></li>
+                        
+                        <li>American Heart Association. (2024). How much sugar is too much? <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much" target="_blank" rel="noopener noreferrer">www.heart.org</a></li>
+                        
+                        <li>Gillespie KM, et al. (2023). The impact of free sugar on human health—A narrative review. <em>Nutrients</em>, 15(4), 889. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9966020/" target="_blank" rel="noopener noreferrer">PMC9966020</a></li>
+                        
+                        <li>Healthline. (2024). 30-Day No Sugar Challenge: Benefits, What to Expect, and More. Medically reviewed by Jerlyn Jones, MS MPA RDN LD CLT. <a href="https://www.healthline.com/nutrition/30-days-no-sugar" target="_blank" rel="noopener noreferrer">www.healthline.com</a></li>
+                        
+                        <li>Zhang L, et al. (2024). Association between dietary sugar intake and depression in US adults: A cross-sectional study. <em>Journal of Affective Disorders</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10851576/" target="_blank" rel="noopener noreferrer">PMC10851576</a></li>
+                        
+                        <li>Thrive Nutrition. (2024). The Best No-Sugar Diet Meal Plan for 2024. <a href="https://www.thrivenutritionmn.com/target-inflammation-naturally/the-best-no-sugar-diet-meal-plan-for-2024" target="_blank" rel="noopener noreferrer">www.thrivenutritionmn.com</a></li>
+                    </ol>
+                </div>
+
+                <div class="author-bio">
+                    <h4>About the Research Team</h4>
+                    <p>The ZeroSugar Club Research Team consists of registered dietitians, certified nutritionists, and health science researchers dedicated to providing evidence-based nutritional guidance. All content is reviewed for accuracy and updated regularly to reflect the latest peer-reviewed research.</p>
+                </div>
+                
+                <div class="disclaimer-box">
+                    <p><strong>Medical Disclaimer:</strong> This content is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or qualified health provider with any questions you may have regarding a medical condition or dietary changes.</p>
                 </div>
             </div>
 
@@ -421,40 +310,41 @@
                 <div class="sidebar-widget cta-widget">
                     <h4>Ready to Start?</h4>
                     <p>Get 30 days of science-backed meal plans and workouts.</p>
-                    <a href="index.html#download" class="btn">Try Free for 3 Days</a>
+                    <a href="index.html#download" class="btn btn-secondary">Try Free for 3 Days</a>
                 </div>
             </aside>
         </div>
-    </div>
-</article>
+    </article>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div>
-                <h4 style="color: white; margin-bottom: 1rem;">ZeroSugar Club</h4>
-                <p style="color: rgba(255, 255, 255, 0.8);">Science-backed nutrition for lasting health transformation.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>ZeroSugar Club</h4>
+                    <p>Science-backed nutrition for lasting health transformation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Science Blog</a></li>
+                        <li><a href="index.html#science">Research</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h4 style="color: white; margin-bottom: 1rem;">Resources</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.5rem;"><a href="blog.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Science Blog</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="index.html#science" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Research</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="color: white; margin-bottom: 1rem;">Legal</h4>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 0.5rem;"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Privacy Policy</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Terms of Service</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZeroSugar Club. All rights reserved.</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 ZeroSugar Club. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
 </html>
