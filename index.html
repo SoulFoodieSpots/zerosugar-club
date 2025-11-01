@@ -5,63 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Science-backed 30-day no sugar challenge app. Reduce added sugars, lose weight, and improve metabolic health with expert meal plans and workouts. Download the ZeroSugar Club app today.">
     <meta name="keywords" content="no sugar diet, sugar detox, weight loss app, low sugar meal plans, reduce added sugar, metabolic health, fitness app, 30 day challenge">
-    <meta name="author" content="ZeroSugar Club">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/zerosugar-club/">
-    <meta property="og:title" content="ZeroSugar Club - Science-Backed 30-Day No Sugar Challenge">
-    <meta property="og:description" content="Transform your health with our evidence-based low-sugar program. Meal plans, workouts, and progress tracking in one app.">
-    <meta property="og:image" content="https://yourusername.github.io/zerosugar-club/images/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourusername.github.io/zerosugar-club/">
-    <meta property="twitter:title" content="ZeroSugar Club - Science-Backed 30-Day No Sugar Challenge">
-    <meta property="twitter:description" content="Transform your health with our evidence-based low-sugar program. Meal plans, workouts, and progress tracking in one app.">
-    <meta property="twitter:image" content="https://yourusername.github.io/zerosugar-club/images/twitter-image.jpg">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourusername.github.io/zerosugar-club/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
     
     <title>ZeroSugar Club - Science-Backed 30-Day No Sugar Challenge | Weight Loss & Metabolic Health</title>
     
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Google Analytics (replace with your ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    
-    <!-- Schema.org structured data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MobileApplication",
-        "name": "ZeroSugar Club",
-        "description": "30-day no sugar challenge app with meal plans and workouts",
-        "applicationCategory": "HealthApplication",
-        "operatingSystem": "iOS",
-        "offers": {
-            "@type": "Offer",
-            "price": "6.99",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250"
+    <style>
+        /* Inline Critical CSS for Fast Loading */
+        :root {
+            --primary-color: #7C3AED;
+            --primary-dark: #5B21B6;
+            --secondary-color: #F59E0B;
+            --success-color: #10B981;
+            --text-dark: #1F2937;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border-color: #E5E7EB;
         }
-    }
-    </script>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            background: var(--primary-color);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #F9FAFB 0%, #EDE9FE 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        /* Features */
+        section {
+            padding: 5rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -78,11 +246,6 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="#download" class="cta-button">Download App</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </div>
     </nav>
@@ -94,35 +257,22 @@
                 <div class="hero-text">
                     <h1>Transform Your Health with the <span class="highlight">Science-Backed</span> 30-Day No Sugar Challenge</h1>
                     <p class="hero-subtitle">Cut added sugars, lose weight, and improve metabolic health with expert meal plans and workouts—all in one app.</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <strong>0.65kg</strong>
-                            <span>Average weight loss per serving reduction of sugar</span>
-                        </div>
-                        <div class="stat">
-                            <strong>10%</strong>
-                            <span>Recommended daily sugar limit by AHA</span>
-                        </div>
-                        <div class="stat">
-                            <strong>30 Days</strong>
-                            <span>Complete transformation program</span>
-                        </div>
-                    </div>
                     <div class="cta-group">
                         <a href="#download" class="btn btn-primary">Download for iOS</a>
-                        <a href="#science" class="btn btn-secondary">See the Science</a>
                     </div>
-                    <p class="trust-badge">✓ Try 3 days free • ✓ One-time payment of $6.99 • ✓ No subscription</p>
+                    <p style="color: var(--text-light); font-size: 0.875rem;">✓ Try 3 days free • ✓ One-time payment of $6.99 • ✓ No subscription</p>
                 </div>
                 <div class="hero-image">
-                    <img src="images/app-mockup.png" alt="ZeroSugar Club app interface showing meal plans and workout tracker" width="600" height="800">
+                    <div style="width: 100%; height: 500px; background: linear-gradient(135deg, #7C3AED, #F59E0B); border-radius: 2rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        📱
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features">
         <div class="container">
             <h2>Everything You Need to <span class="highlight">Cut Sugar</span> and Feel Amazing</h2>
             <p class="section-subtitle">Backed by research from Stanford Medicine, American Heart Association, and leading nutrition science</p>
@@ -168,227 +318,50 @@
     </section>
 
     <!-- Science Section -->
-    <section id="science" class="science-section">
+    <section id="science" style="background: var(--bg-light);">
         <div class="container">
             <h2>The <span class="highlight">Science</span> Behind Low-Sugar Living</h2>
             <p class="section-subtitle">Evidence-based research supporting sugar reduction for weight loss and metabolic health</p>
             
-            <div class="research-cards">
-                <article class="research-card">
-                    <div class="research-badge">Stanford Medicine</div>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Stanford Medicine Study</h4>
                     <h3>Mediterranean vs. Keto: The Results</h3>
-                    <p class="research-finding">Both diets achieved similar weight loss (7-8%), but the Mediterranean approach—which naturally limits added sugars—showed superior long-term adherence and decreased LDL cholesterol by 5%, while keto increased it by 10%.</p>
-                    <a href="https://med.stanford.edu/news/all-news/2022/070/keto-mediterranean-diet-diabetes.html" target="_blank" rel="noopener noreferrer" class="research-link">Read Stanford Study →</a>
+                    <p>Both diets achieved similar weight loss (7-8%), but the Mediterranean approach showed superior long-term adherence and decreased LDL cholesterol by 5%.</p>
+                    <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read Full Research →</a>
                 </article>
                 
-                <article class="research-card">
-                    <div class="research-badge">PREMIER Trial</div>
+                <article class="feature-card">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">PREMIER Trial</h4>
                     <h3>Sugar Reduction = Weight Loss</h3>
-                    <p class="research-finding">Reducing sugar-sweetened beverage intake by just one serving per day resulted in weight loss of 0.49kg at 6 months and 0.65kg at 18 months—with lasting results.</p>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0002916523237879" target="_blank" rel="noopener noreferrer" class="research-link">Read PREMIER Study →</a>
+                    <p>Reducing sugar-sweetened beverage intake by just one serving per day resulted in weight loss of 0.65kg at 18 months.</p>
+                    <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read Full Research →</a>
                 </article>
                 
-                <article class="research-card">
-                    <div class="research-badge">American Heart Association</div>
+                <article class="feature-card">
+                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">American Heart Association</h4>
                     <h3>Daily Sugar Guidelines</h3>
-                    <p class="research-finding">The AHA recommends limiting added sugars to no more than 36g (9 teaspoons) for men and 25g (6 teaspoons) for women daily to reduce cardiovascular disease risk.</p>
-                    <a href="https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much" target="_blank" rel="noopener noreferrer" class="research-link">Read AHA Guidelines →</a>
-                </article>
-                
-                <article class="research-card">
-                    <div class="research-badge">Clinical Research</div>
-                    <h3>Metabolic Health Benefits</h3>
-                    <p class="research-finding">Cutting added sugars and processed foods minimizes blood sugar spikes, prevents insulin resistance, and lowers the risk of diabetes-related complications and inflammation.</p>
-                    <a href="blog.html" class="research-link">Read Full Research →</a>
-                </article>
-            </div>
-            
-            <div class="science-cta">
-                <h3>Want to dive deeper into the research?</h3>
-                <a href="blog.html" class="btn btn-primary">Read Our Science Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Real Results from <span class="highlight">Real People</span></h2>
-            
-            <div class="testimonials-grid">
-                <article class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Lost 8 pounds in 30 days and my energy is through the roof. The meal plans are actually delicious—I don't feel like I'm dieting at all!"</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah M.</strong>
-                        <span>Lost 8 lbs in 30 days</span>
-                    </div>
-                </article>
-                
-                <article class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Finally, an app that's science-based and actually works. No gimmicks, just real food and effective workouts. Worth every penny!"</p>
-                    <div class="testimonial-author">
-                        <strong>Mike R.</strong>
-                        <span>Completed 2 full rounds</span>
-                    </div>
-                </article>
-                
-                <article class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"My blood sugar is finally stable. I used to crash every afternoon—now I have consistent energy all day. This changed my life."</p>
-                    <div class="testimonial-author">
-                        <strong>Jennifer L.</strong>
-                        <span>Prediabetic → Normal range</span>
-                    </div>
+                    <p>The AHA recommends limiting added sugars to no more than 36g for men and 25g for women daily to reduce cardiovascular disease risk.</p>
+                    <a href="blog.html" style="color: var(--primary-color); font-weight: 600;">Read Full Research →</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="comparison">
+    <!-- Download CTA -->
+    <section id="download" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white; text-align: center;">
         <div class="container">
-            <h2>How ZeroSugar Club <span class="highlight">Compares</span></h2>
+            <h2 style="color: white;">Start Your <span style="color: var(--secondary-color);">Free 3-Day Trial</span> Today</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem;">Join thousands who've transformed their health with science-backed nutrition</p>
             
-            <div class="comparison-table">
-                <div class="comparison-header">
-                    <div class="comparison-cell"></div>
-                    <div class="comparison-cell highlight-col">
-                        <strong>ZeroSugar Club</strong>
-                    </div>
-                    <div class="comparison-cell">Other Apps</div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Pricing</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> $6.99 one-time
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="cross">✗</span> $10-30/month
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Science-Backed</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> AHA + Stanford research
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="check">~</span> Varies
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Meal Plans Included</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> 30 days full recipes
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="cross">✗</span> Often extra cost
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Workout Programs</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> 30 bodyweight workouts
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="cross">✗</span> Usually separate
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Offline Access</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> Full offline mode
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="cross">✗</span> Requires internet
-                    </div>
-                </div>
-                
-                <div class="comparison-row">
-                    <div class="comparison-cell"><strong>Free Trial</strong></div>
-                    <div class="comparison-cell highlight-col">
-                        <span class="check">✓</span> 3 days full access
-                    </div>
-                    <div class="comparison-cell">
-                        <span class="check">~</span> 7 days typical
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+            <a href="https://apps.apple.com/your-app" class="btn" style="background: white; color: var(--primary-color); display: inline-block;">
+                Download for iOS
+            </a>
             
-            <div class="faq-grid">
-                <article class="faq-item">
-                    <h3>Is the no-sugar diet safe and effective?</h3>
-                    <p>Yes! Research shows that reducing <strong>added sugars</strong> (not natural sugars from fruits) improves weight loss, blood sugar control, and cardiovascular health. Our program follows American Heart Association guidelines: under 25g daily for women, 36g for men.</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>Can I eat fruit on this program?</h3>
-                    <p>Absolutely! Our meal plans include whole fruits, which contain natural sugars plus fiber, vitamins, and antioxidants. We eliminate <strong>added sugars</strong> from processed foods, sodas, and sweets—not the healthy sugars found in whole foods.</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>How is this different from keto or paleo?</h3>
-                    <p>Unlike restrictive keto (which eliminates healthy whole grains and fruits), our approach is based on Mediterranean-style eating with low added sugar. Stanford research shows this method achieves similar weight loss with better long-term adherence and heart health benefits.</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>Do I need a subscription?</h3>
-                    <p>No! Try Days 1-3 completely free. If you love it, unlock all 30 days for just <strong>$6.99 one-time</strong>—no monthly fees, no recurring charges. Pay once, access forever.</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>Do I need gym equipment?</h3>
-                    <p>Nope! All 30 workouts use just your bodyweight. Perfect for home, travel, or anywhere. Optional equipment like dumbbells can enhance some exercises, but they're not required.</p>
-                </article>
-                
-                <article class="faq-item">
-                    <h3>What results can I expect?</h3>
-                    <p>Research shows reducing one serving of sugar per day leads to 0.65kg weight loss over 18 months. Most users report improved energy, better sleep, clearer skin, and stable blood sugar within the first week—plus 5-10 pounds lost in 30 days.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download CTA Section -->
-    <section id="download" class="download-section">
-        <div class="container">
-            <div class="download-content">
-                <h2>Start Your <span class="highlight">Free 3-Day Trial</span> Today</h2>
-                <p>Join thousands who've transformed their health with science-backed nutrition</p>
-                
-                <div class="download-buttons">
-                    <a href="https://apps.apple.com/your-app" class="app-store-button">
-                        <img src="images/app-store-badge.svg" alt="Download on the App Store" width="200" height="60">
-                    </a>
-                </div>
-                
-                <div class="download-features">
-                    <div class="download-feature">
-                        <span class="check-icon">✓</span>
-                        <span>3 days completely free</span>
-                    </div>
-                    <div class="download-feature">
-                        <span class="check-icon">✓</span>
-                        <span>$6.99 one-time unlock</span>
-                    </div>
-                    <div class="download-feature">
-                        <span class="check-icon">✓</span>
-                        <span>No subscription required</span>
-                    </div>
-                </div>
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                <div>✓ 3 days completely free</div>
+                <div>✓ $6.99 one-time unlock</div>
+                <div>✓ No subscription required</div>
             </div>
         </div>
     </section>
@@ -397,50 +370,22 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>ZeroSugar Club</h4>
-                    <p>Science-backed nutrition for lasting health transformation.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/zerosugarclub" aria-label="Twitter">🐦</a>
-                        <a href="https://instagram.com/zerosugarclub" aria-label="Instagram">📷</a>
-                        <a href="https://facebook.com/zerosugarclub" aria-label="Facebook">👍</a>
-                    </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">ZeroSugar Club</h4>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Science-backed nutrition for lasting health transformation.</p>
                 </div>
-                
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blog.html">Science Blog</a></li>
-                        <li><a href="#science">Research</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="mailto:support@zerosugarclub.com">Support</a></li>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Resources</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="blog.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Science Blog</a></li>
+                        <li><a href="#science" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Research</a></li>
                     </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="disclaimer.html">Medical Disclaimer</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Download</h4>
-                    <a href="https://apps.apple.com/your-app" class="footer-download">
-                        <img src="images/app-store-badge-small.svg" alt="Download on App Store" width="150" height="45">
-                    </a>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2025 ZeroSugar Club. All rights reserved.</p>
-                <p class="disclaimer">This app provides nutritional information and is not a substitute for professional medical advice. Consult your healthcare provider before starting any diet program.</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
